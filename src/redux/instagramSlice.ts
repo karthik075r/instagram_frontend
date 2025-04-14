@@ -7,7 +7,10 @@ import {
   getInstagramProfile,
   postCommentReply,
 } from "../services/instagram.service";
-import { setAccessToken } from "../utils/helpers";
+import {
+  getUniqueCommentsWithoutReplies,
+  setAccessToken,
+} from "../utils/helpers";
 import {
   InstagramProfile,
   InstagramMedia,
@@ -102,7 +105,7 @@ export const fetchInstagramComments = createAsyncThunk<
       eLocalStorage.ACCESS_TOKEN
     ) as string;
     const response = await getComments(accessToken, mediaId, setAccessToken);
-    return { mediaId, data: response.data };
+    return { mediaId, data: getUniqueCommentsWithoutReplies(response.data) };
   } catch (err) {
     const error = err as AxiosError<InstagramError>;
     return rejectWithValue(
