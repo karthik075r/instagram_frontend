@@ -17,7 +17,7 @@ const Login: React.FC = () => {
       } else {
         clearInterval(typingInterval);
       }
-    }, 100);
+    }, 50);
 
     return () => clearInterval(typingInterval);
   }, []);
