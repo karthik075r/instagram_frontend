@@ -1,11 +1,6 @@
 import React from "react";
 import { Card, Spin, Alert, Avatar, Typography, Space, Statistic } from "antd";
-import {
-  InfoCircleOutlined,
-  UserAddOutlined,
-  UserOutlined,
-  UsergroupAddOutlined,
-} from "@ant-design/icons";
+import { InfoCircleOutlined, UserOutlined } from "@ant-design/icons";
 import { InstagramProfile } from "../../../types/instagram";
 import { eString } from "../../../utils/constants";
 import "./ProfileCard.css"; // Import the CSS file
@@ -72,13 +67,11 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
             <Statistic
               title="Followed"
               value={profile.followers_count}
-              prefix={<UserAddOutlined />}
               className="profile-stat"
             />
             <Statistic
               title="Follows"
               value={profile.follows_count}
-              prefix={<UsergroupAddOutlined />}
               className="profile-stat"
             />
           </Space>
