@@ -1,0 +1,43 @@
+.post-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  margin-bottom: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.no-padding-card .ant-card-body {
+  padding: 0;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.post-media {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.post-timestamp {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.post-comment-button {
+  font-size: 14px;
+  color: #1890ff;
+}
+
+.post-comment-button:hover {
+  color: #40a9ff;
+}
+
+.post-comment-button .anticon {
+  font-size: 16px;
+}

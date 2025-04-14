@@ -1,0 +1,12 @@
+.send-button {
+  background-color: #242424;
+  border-color: #242424 !important;
+  color: #fefefe;
+  height: 24px !important;
+  line-height: 24px !important;
+}
+
+.send-button:hover {
+  border-color: #242424 !important;
+  color: #242424 !important;
+}
