@@ -1,5 +1,5 @@
 import Login from "./pages/authLogin/AuthLogin";
-import Dashboard from "./pages/dashboard/Dashboard";
+import Feed from "./pages/feed/Feed";
 
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path={eRoutes.login} element={<Login />} />
         <Route path={eRoutes.callback} element={<Callback />} />
-        <Route path={eRoutes.dashboard} element={<Dashboard />} />
+        <Route path={eRoutes.feed} element={<Feed />} />
       </Routes>
     </>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Button, Typography } from "antd";
 import { CommentOutlined } from "@ant-design/icons";
 import { InstagramMedia, InstagramComment } from "../../../types/instagram";
-import CommentList from "../CommentList/CommentList";
+import CommentList from "../commentList/CommentList";
 import "./PostCard.css"; // Import the CSS file
 
 const { Text } = Typography;

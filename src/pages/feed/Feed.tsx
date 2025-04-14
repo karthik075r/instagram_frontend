@@ -2,11 +2,11 @@ import React from "react";
 import { List, Button, Space, Alert, Row } from "antd";
 import { useInstagram } from "../../hooks/useInstagram";
 import { InstagramMedia } from "../../types/instagram";
-import ProfileCard from "../../components/dashboard/profileCard/ProfileCard";
-import PostCard from "../../components/dashboard/postCard/PostCard";
+import ProfileCard from "../../components/feed/profileCard/ProfileCard";
+import PostCard from "../../components/feed/postCard/PostCard";
 import { eString } from "../../utils/constants";
 
-const Dashboard: React.FC = () => {
+const Feed: React.FC = () => {
   const {
     profile,
     media,
@@ -116,4 +116,4 @@ const Dashboard: React.FC = () => {
   );
 };
 
-export default Dashboard;
+export default Feed;

@@ -5,7 +5,7 @@ export const eLocalStorage = {
 
 export const eRoutes = {
   login: "/auth/login",
-  dashboard: "/dashboard",
+  feed: "/feed",
   callback: "/auth/instagram/callback",
   authInstagram: "/auth/instagram",
 };

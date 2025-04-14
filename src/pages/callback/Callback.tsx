@@ -16,13 +16,12 @@ const Callback: React.FC = () => {
     const fetchInstagramData = async () => {
       try {
         const data = await handleInstagramCallback(code as string);
-        console.log("data", data);
 
         if (!data) {
           return;
         }
         setAccessToken(data.accessToken);
-        navigate(eRoutes.dashboard);
+        navigate(eRoutes.feed);
       } catch (error) {
         console.error(error);
       }
